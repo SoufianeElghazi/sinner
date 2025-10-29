@@ -11,10 +11,6 @@ function Cloud() {
         <SiMicrosoftazure />
         <p style={{fontSize: "14px"}}>Microsoft Azure</p>
       </Col>
-      // <Col xs={4} md={2} className="tech-icons">
-      //   <SiGooglecloud />
-      //   <p style={{fontSize: "14px"}}>Google Cloud</p>
-      // </Col>
     </Row>
   );
 }
