@@ -5,7 +5,7 @@ import {
   FaSnowflake,
 } from "react-icons/fa";
 import {
-  SiGooglebigquery,
+  SiGooglebigquery,SiMicrosoftazure,
   
 } from "react-icons/si";
 
@@ -19,6 +19,10 @@ function Datawarehouses() {
       <Col xs={4} md={2} className="tech-icons">
         <SiGooglebigquery />
         <p style={{fontSize: "14px"}}>BigQuery</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMicrosoftazure />
+        <p style={{fontSize: "14px"}}>Fabric Lakehouse</p>
       </Col>
     </Row>
   );

@@ -8,7 +8,8 @@ import {
   SiApachekafka,
   SiTalend,
   SiPowerbi,
-  SiDbt
+  SiDbt,
+  SiPowerapps,SiPowerautomate,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -49,6 +50,14 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiDbt />
         <p style={{fontSize: "14px"}}>DBT</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPowerautomate />
+        <p style={{fontSize: "14px"}}>Power Automate</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPowerapps />
+        <p style={{fontSize: "14px"}}>Power Apps</p>
       </Col>
     </Row>
   );

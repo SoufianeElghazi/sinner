@@ -66,7 +66,7 @@ function About() {
         <Databases />
 
         <h1 className="project-heading">
-          <strong className="purple">Datawarehouses</strong>
+          <strong className="purple">Datawarehouses </strong> & Datalakehouses
         </h1>
         <Datawarehouses />
 

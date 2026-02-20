@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import { FaJava,FaSuitcase,FaLocationArrow, FaCalendarAlt , FaMapMarkerAlt, FaGraduationCap  } from "react-icons/fa";
-import { SiMicrosoftsqlserver,SiOpencv,SiReact,SiYolo,SiDbt,SiCsharp,SiMysql,SiPython, SiPostgresql,SiStreamlit, SiPowerbi,SiTalend, SiApachekafka, SiApachespark, SiApacheairflow, SiDjango, SiRedis } from "react-icons/si";
+import { SiSelenium,SiMicrosoftazure,SiMicrosoftsqlserver,SiOpencv,SiReact,SiYolo,SiDbt,SiCsharp,SiMysql,SiPython, SiPostgresql,SiStreamlit, SiPowerbi,SiTalend, SiApachekafka, SiApachespark, SiApacheairflow, SiDjango, SiRedis } from "react-icons/si";
 import LeetCodeDashboard  from "../About/Leetcode";
 import Github from "../About/Github";
 import Detaills from "../Detaills";
@@ -21,7 +21,8 @@ function Home2() {
             Professional<span className="purple"> Summary </span>
             </h1>
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-                As a passionate Data Engineer and Data Analyst, I specialize in transforming raw data into actionable insights and building scalable data solutions. 
+                As a passionate Senior Data Engineer and Power BI Specialist, ×4 Microsoft Azure Certified, 
+                I specialize in transforming raw data into actionable insights and building scalable data solutions. 
                 With expertise in  
                 <i>
                     <b className="other_color"> Python</b> and <b className="other_color">SQL </b>, 
@@ -38,7 +39,7 @@ function Home2() {
                 <b className="other_color">Large Language Models (LLMs)</b> into intelligent data solutions.
                 <br /><br />
                 Beyond data, I am proficient in modern development frameworks like  
-                <b className="other_color"> Node.js</b>,<b className="other_color"> FastApi</b> <b className="other_color"> React</b>, <b className="other_color">Flutter</b>, and <b className="other_color"> Django</b>,  
+                <b className="other_color"> Node.js</b>,<b className="other_color"> FastApi</b> <b className="other_color"> React</b> and <b className="other_color">Flutter</b>,  
                 allowing me to build seamless and scalable applications that bridge technology and analytics.
                 <br /><br />
                 My mission is to drive innovation through data, continuously refine my expertise, and contribute to impactful projects in  
@@ -62,16 +63,49 @@ function Home2() {
             <div className="timeline">
 
               {/* experience - 1 */}
+              <div className="container-timeline right">
+                <div className="content">
+                  <h5 style={{color:"white"}}>
+                  <FaSuitcase className="icon" />
+                    Accenture • CDI • Hybrid</h5>
+                  <p style={{color:"#fca5a5"}}>Data Engineer</p>
+                  <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <div>
+                    <FaCalendarAlt className="icon" />
+                    Dec 2025 – Present
+                    </div>
+                    <div>
+                    <FaLocationArrow className="icon" />
+                    Rabat
+                    </div>                                    
+                  </div>
+                  <p>
+                  <b className="purple">Data Engineer at Btechnologie Center, Exclusive Partner of Bouygues Telecom</b><br />
+                  Design and optimize ETL pipelines with Microsoft Fabric (Lakehouse, Dataflows Gen2, Pipelines). 
+                  Build Power BI reports (Direct Lake, optimized DAX). 
+                  Enhance data workflows using PySpark & SQL. 
+                  Contribute to AI projects for communication failure prediction and develop Selenium automation bots.</p>
+                  <div className="technologies">
+                    <span className="technology-badge"><SiMicrosoftazure /></span>
+                    <span className="technology-badge"><SiPython /></span>
+                    <span className="technology-badge"><SiApachespark /></span>
+                    <span className="technology-badge"><SiPowerbi /></span>
+                    <span className="technology-badge"><SiSelenium /></span>
+                  </div>
+                </div>
+              </div>
+
+              {/* experience - 2 */}
               <div className="container-timeline left">
               <div className="content">
                   <h5 style={{color:"white"}}>
                   <FaSuitcase className="icon" />
-                    ENOVA RT • CDI • On-site</h5>
+                    ENOVA RT • CDI • Hybrid</h5>
                   <p style={{color:"#fca5a5"}}>Data Engineer | Power BI Specialist</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
-                    Sep 2024 – Present
+                    Sep 2024 – Jan 2026
                     </div>
                     <div>
                     <FaLocationArrow className="icon" />
@@ -94,7 +128,7 @@ function Home2() {
                 </div>
               </div>
 
-              {/* experience - 2 */}
+              {/* experience - 3 */}
               <div className="container-timeline right">
                 <div className="content">
                   <h5 style={{color:"white"}}>
@@ -125,7 +159,7 @@ function Home2() {
                 </div>
               </div>
 
-              {/* experience - 3 */}
+              {/* experience - 4 */}
               <div className="container-timeline left">
                 <div className="content">
                   <h5 style={{color:"white"}}>
@@ -160,7 +194,7 @@ function Home2() {
                 </div>
               </div>
 
-              {/* experience - 4 */}
+              {/* experience - 5 */}
               <div className="container-timeline right">
                 <div className="content">
                   <h5 style={{color:"white"}}>
@@ -190,7 +224,7 @@ function Home2() {
                 </div>
               </div>
 
-              {/* experience - 4 */}
+              {/* experience - 6 */}
               <div className="container-timeline left">
                 <div className="content">
                   <h5 style={{color:"white"}}>
