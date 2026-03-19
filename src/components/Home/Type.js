@@ -11,7 +11,6 @@ function Type() {
           "Senior Data Analyst",
           "Power BI Specialist",
           "Big Data Enthusiast",
-          "Web Developer",
         ],
         autoStart: true,
         loop: true,

@@ -3,7 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import { FaJava,FaSuitcase,FaLocationArrow, FaCalendarAlt , FaMapMarkerAlt, FaGraduationCap  } from "react-icons/fa";
-import { SiSelenium,SiMicrosoftazure,SiMicrosoftsqlserver,SiOpencv,SiReact,SiYolo,SiDbt,SiCsharp,SiMysql,SiPython, SiPostgresql,SiStreamlit, SiPowerbi,SiTalend, SiApachekafka, SiApachespark, SiApacheairflow, SiDjango, SiRedis } from "react-icons/si";
+import { SiSelenium,SiMicrosoftazure,SiMicrosoftsqlserver,SiPalantir,SiTypescript,SiCloudfoundry,
+         SiOpencv,SiReact,SiYolo,SiDbt,SiCsharp,SiMysql,SiPython, SiPostgresql,SiStreamlit,
+        SiPowerbi,SiTalend, SiApachekafka, SiApachespark, SiApacheairflow, SiDjango, SiRedis } from "react-icons/si";
 import LeetCodeDashboard  from "../About/Leetcode";
 import Github from "../About/Github";
 import Detaills from "../Detaills";
@@ -44,7 +46,7 @@ function Home2() {
                 <br /><br />
                 My mission is to drive innovation through data, continuously refine my expertise, and contribute to impactful projects in  
                 <i>
-                    <b className="other_color">Data engineering </b> and <b className="other_color">analysis</b>.
+                    <b className="other_color"> Data engineering </b> and <b className="other_color">analysis</b>.
                 </i>
             </p>
 
@@ -61,6 +63,38 @@ function Home2() {
           <Col md={12}>
             <h1 className="purple">Experience</h1>
             <div className="timeline">
+              {/* experience - 0 */}
+              <div className="container-timeline left">
+                <div className="content">
+                  <h5 style={{color:"white"}}>
+                  <FaSuitcase className="icon" />
+                    Lear Corporation • CDI • Hybrid</h5>
+                  <p style={{color:"#fca5a5"}}>Data Engineer</p>
+                  <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <div>
+                    <FaCalendarAlt className="icon" />
+                    Mar 2026 – Present
+                    </div>
+                    <div>
+                    <FaLocationArrow className="icon" />
+                    Rabat
+                    </div>                                    
+                  </div>
+                  <p>
+                  <b className="purple">Data Engineer</b><br />
+                  Built standardized tools and real-time dashboards, reducing manual reporting and improving KPI visibility for leadership ,
+                  Designed scalable data pipelines integrating ERP, sensor, and operational data using Palantir Foundry
+                  and Combined structured and unstructured data to deliver trend analysis and anomaly detection for operational insights
+                </p>
+                  <div className="technologies">
+                    <span className="technology-badge"><SiCloudfoundry /></span>
+                    <span className="technology-badge"><SiPython/></span>
+                    <span className="technology-badge"><SiApachespark/></span>
+                    <span className="technology-badge"><SiPalantir/></span>
+                    <span className="technology-badge"><SiTypescript/></span>
+                  </div>
+                </div>
+              </div>
 
               {/* experience - 1 */}
               <div className="container-timeline right">
@@ -72,7 +106,7 @@ function Home2() {
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
-                    Dec 2025 – Present
+                    Dec 2025 – Mar 2026
                     </div>
                     <div>
                     <FaLocationArrow className="icon" />

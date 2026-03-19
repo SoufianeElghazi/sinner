@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-    SiMicrosoftazure ,SiGooglecloud,
+    SiMicrosoftazure ,SiGooglecloud,SiDatabricks,SiPalantir
 } from "react-icons/si";
 
 function Cloud() {
@@ -14,6 +14,14 @@ function Cloud() {
       <Col xs={4} md={2} className="tech-icons">
         <SiGooglecloud />
         <p style={{fontSize: "14px"}}>Google Cloud</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDatabricks />
+        <p style={{fontSize: "14px"}}>Databricks</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPalantir />
+        <p style={{fontSize: "14px"}}>Palantir Foundry</p>
       </Col>
     </Row>
   );
