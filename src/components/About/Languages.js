@@ -4,7 +4,6 @@ import {
   DiJavascript1,
   DiPython,
   DiJava,
-  DiScala
 } from "react-icons/di";
 
 function Languages() {
@@ -26,10 +25,6 @@ function Languages() {
         <DiJava />
         <p style={{fontSize: "14px"}}>Java</p>
       </Col>    
-      <Col xs={4} md={2} className="tech-icons sql-icon">
-        <DiScala />
-        <p style={{fontSize: "14px"}}>Scala</p>
-      </Col>
     </Row>
   );
 }
