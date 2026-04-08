@@ -94,7 +94,7 @@ function Projects() {
               imgPath={dp_700}
               title={
                 <>
-                  Microsoft Fabric Data Engineer Associate
+                  Microsoft Fabric Data Engineer Associate (DP-700)
                 </>
               }             
               link="https://learn.microsoft.com/api/credentials/share/fr-fr/EL-Soufiane/C0E17EB398300E40?sharingId=44BF4D866025AA1E"
@@ -111,7 +111,7 @@ function Projects() {
               imgPath={pl_300}
               title={
                 <>
-                  Power BI Data Analyst Associate
+                  Power BI Data Analyst Associate (PL-300)
                 </>
               }             
               link="https://learn.microsoft.com/api/credentials/share/en-us/EL-Soufiane/533F7FFDFF94188?sharingId=44BF4D866025AA1E"
