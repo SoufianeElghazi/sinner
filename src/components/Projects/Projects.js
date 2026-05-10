@@ -15,6 +15,7 @@ import flutter_potato_mobile from "../../Assets/Projects/4.png";
 import flutter_chat_gpt from "../../Assets/Projects/2.png";
 import powerbi_department from "../../Assets/Projects/3.png";
 import flutter_mobile_assistant from "../../Assets/Projects/1.png";
+import factorypulse from "../../Assets/Projects/16.png";
 import greenfuture from "../../Assets/Projects/11.png";
 
 import ibm_iavs from "../../Assets/Certifications/3.png";
@@ -44,6 +45,10 @@ import Testimonials from "../Testimonials";
 
 
 // Badges
+const azureBadge = "https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white";
+const databricksBadge = "https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white";
+const pysparkBadge = "https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white";
+const deltaLakeBadge = "https://img.shields.io/badge/Delta%20Lake-00ADD8?style=for-the-badge&logo=databricks&logoColor=white";
 const pythonBadge = "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54";
 const sparkBadge = "https://img.shields.io/badge/Apache%20Spark-FDEE21?style=for-the-badge&logo=apachespark&logoColor=black";
 const kafkaBadge = "https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka";
@@ -297,6 +302,17 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={factorypulse}
+              isBlog={false}
+              title="FactoryPulse Manufacturing Platform"
+              description="Enterprise manufacturing analytics platform with real-time streaming, predictive maintenance, machine health monitoring, and AI-powered operational dashboards."
+              tools={[pysparkBadge, databricksBadge,azureBadge,deltaLakeBadge]}
+              ghLink="https://github.com/SoufianeElghazi/FactoryPulse"
+              demoLink="https://www.youtube.com/watch?v=JZuafevVO1I"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={financial_extractor}
