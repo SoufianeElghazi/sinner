@@ -15,7 +15,10 @@ import flutter_potato_mobile from "../../Assets/Projects/4.png";
 import flutter_chat_gpt from "../../Assets/Projects/2.png";
 import powerbi_department from "../../Assets/Projects/3.png";
 import flutter_mobile_assistant from "../../Assets/Projects/1.png";
+
 import factorypulse from "../../Assets/Projects/16.png";
+import sentineios from "../../Assets/Projects/17.png";
+
 import greenfuture from "../../Assets/Projects/11.png";
 
 import ibm_iavs from "../../Assets/Certifications/3.png";
@@ -77,7 +80,9 @@ const googleCalendarApiBadge = "https://img.shields.io/badge/Google%20Calendar%2
 const denodoBadge = "https://img.shields.io/badge/Denodo-%230081C4.svg?style=for-the-badge&logo=denodo&logoColor=white";
 const ibmWatsonBadge = "https://img.shields.io/badge/IBM%20Watson-%23104E8B.svg?style=for-the-badge&logo=ibm&logoColor=white";
 
-
+const airflowBadge = "https://img.shields.io/badge/Airflow-%23017CEE.svg?style=for-the-badge&logo=apache-airflow&logoColor=white";
+const fastapiBadge = "https://img.shields.io/badge/FastAPI-%23009688.svg?style=for-the-badge&logo=fastapi&logoColor=white";
+const neo4jBadge = "https://img.shields.io/badge/Neo4j-%230081CB.svg?style=for-the-badge&logo=neo4j&logoColor=white";
 
 function Projects() {
   return (
@@ -302,6 +307,24 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sentineios}
+              isBlog={false}
+              title="SentinelOS Monitoring Platform"
+              description="Self-hosted event-driven monitoring platform featuring multi-database architecture, graph-powered alerts and Apple Shortcuts automation."
+              tools={[
+                dockerBadge,
+                kafkaBadge,
+                airflowBadge,
+                fastapiBadge,
+                neo4jBadge,
+                flutterBadge
+              ]}
+              ghLink="https://github.com/SoufianeElghazi/SentinelOS"
+              demoLink="https://youtu.be/A_g6FexGVrA"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={factorypulse}
