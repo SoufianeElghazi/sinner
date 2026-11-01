@@ -1,6 +1,6 @@
 {
   "short_name": "Soufiane ELGHAZI",
-  "name": "Where data meets hard work—explore the portfolio of Soufiane Elghazi.",
+  "name": "Where data meets hard work\u2014explore the portfolio of Soufiane Elghazi.",
   "icons": [
     {
       "src": "favicon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#fecaca",
-  "background_color": "#ffffff"
+  "theme_color": "#f7f4ef",
+  "background_color": "#f7f4ef"
 }
