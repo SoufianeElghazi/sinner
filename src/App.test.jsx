@@ -1,6 +1,6 @@
 import React from 'react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
@@ -14,9 +14,16 @@ vi.mock('react-pdf', () => ({
 
 beforeEach(() => window.history.replaceState({}, '', '/'));
 
+// Cold module transforms on hosted runners can exceed findByRole's default timeout.
+// Wait for actual lazy imports and React updates, without adding an arbitrary delay.
+async function settleRoute() {
+  await act(async () => { await vi.dynamicImportSettled(); });
+}
+
 describe('portfolio navigation', () => {
   it('shows the homepage without a timed preloader or analytics request', async () => {
     render(<App />);
+    await settleRoute();
     expect(await screen.findByRole('heading', { name: /ELGHAZI Soufiane/ })).toBeVisible();
     expect(document.querySelector('#preloader')).toBeNull();
     expect(document.querySelector('#portfolio-analytics')).toBeNull();
@@ -25,7 +32,9 @@ describe('portfolio navigation', () => {
   it('navigates to the book and preserves the direct PDF download', async () => {
     const user = userEvent.setup();
     render(<App />);
+    await settleRoute();
     await user.click(screen.getByRole('link', { name: /My Endeavors/ }));
+    await settleRoute();
     expect(await screen.findByRole('heading', { name: 'My Book' })).toBeVisible();
     const link = screen.getByRole('link', { name: 'Download the book' });
     expect(link).toHaveAttribute('href', '/The_Seeker.pdf');
@@ -37,8 +46,10 @@ describe('portfolio navigation', () => {
     window.history.replaceState({}, '', '/about');
     const user = userEvent.setup();
     render(<App />);
+    await settleRoute();
     expect(await screen.findByRole('heading', { name: /About\s*Me/ })).toBeVisible();
     await user.click(screen.getByRole('link', { name: /Resume/ }));
+    await settleRoute();
     expect(await screen.findByRole('heading', { name: /My Recent\s*Resume/ })).toBeVisible();
     expect(screen.getByRole('link', { name: /Download CV/ })).toHaveAttribute('download', 'Soufiane_Elghazi_CV.pdf');
   });
@@ -46,6 +57,7 @@ describe('portfolio navigation', () => {
   it('redirects an unknown route to the homepage', async () => {
     window.history.replaceState({}, '', '/missing-page');
     render(<App />);
+    await settleRoute();
     expect(await screen.findByRole('heading', { name: /ELGHAZI Soufiane/ })).toBeVisible();
     expect(window.location.pathname).toBe('/');
   });
@@ -53,10 +65,12 @@ describe('portfolio navigation', () => {
   it('closes the mobile menu after navigation', async () => {
     const user = userEvent.setup();
     render(<App />);
+    await settleRoute();
     const toggle = screen.getByRole('button', { name: 'Toggle navigation' });
     await user.click(toggle);
     expect(toggle).toHaveAttribute('aria-expanded', 'true');
     await user.click(screen.getByRole('link', { name: /My Endeavors/ }));
+    await settleRoute();
     expect(await screen.findByRole('heading', { name: 'My Book' })).toBeVisible();
     expect(toggle).toHaveAttribute('aria-expanded', 'false');
   });
@@ -65,6 +79,7 @@ describe('portfolio navigation', () => {
 it('keeps external links isolated from the portfolio window', async () => {
   window.history.replaceState({}, '', '/project');
   render(<App />);
+  await settleRoute();
   await screen.findByRole('heading', { name: 'My Book' });
   const links = document.querySelectorAll('a[target="_blank"]');
   expect(links.length).toBeGreaterThan(10);
