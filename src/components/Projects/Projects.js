@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import BlogsCourses from "./BlogsCourses";
+import MyBook from "./MyBook";
 import Articles from "./Articles.js";
 import CertificationCard from "./CertificationCard.js";
-import Particle from "../Particle";
 import virtualization_denodo from "../../Assets/Projects/7.png";
 import voting_systeme from "../../Assets/Projects/9.png";
 import churn_predict from "../../Assets/Projects/8.png";
@@ -87,7 +87,8 @@ const neo4jBadge = "https://img.shields.io/badge/Neo4j-%230081CB.svg?style=for-t
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <MyBook />
+      <hr className="section-divider" />
       <BlogsCourses/>
       <hr className="section-divider" />
       {/* Certifications Section */}
@@ -95,7 +96,7 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple">Certifications </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--ink)" }}>
           Here are a few Certificates I've got.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
@@ -303,7 +304,7 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Projects </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--ink)" }}>
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

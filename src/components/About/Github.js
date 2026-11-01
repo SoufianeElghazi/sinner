@@ -18,7 +18,7 @@ function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        <strong style={{ color: '#fed7aa' }}>Github</strong> Calendar
+        <strong style={{ color: 'var(--accent)' }}>Github</strong> Calendar
       </h1>
       {isMounted && (
         <GitHubCalendar

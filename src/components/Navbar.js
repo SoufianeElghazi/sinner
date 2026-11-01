@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -27,7 +27,11 @@ function NavBar() {
     }
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    scrollHandler();
+    window.addEventListener("scroll", scrollHandler, { passive: true });
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <Navbar
@@ -94,7 +98,9 @@ function NavBar() {
               <Button
                 href="https://www.udemy.com/course/power-bi-masterclass-from-beginner-to-pl-300-certified/?referralCode=F4AD3AA808E47F3FA66E&couponCode=LETSLEARNNOW"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
+                aria-label="Udemy courses"
               >
                 <SiUdemy style={{ fontSize: "1.2em" }} />{" "}{" "}
               </Button>
@@ -104,7 +110,9 @@ function NavBar() {
               <Button
                 href="https://www.youtube.com/@Elghazi.Soufiane"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
+                aria-label="YouTube channel"
               >
                 <AiFillYoutube style={{ fontSize: "1.5em" }} />
                 {" "}{" "}
@@ -115,7 +123,9 @@ function NavBar() {
               <Button
                 href="https://buymeacoffee.com/soufiane02"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
+                aria-label="Buy me a coffee"
               >
                 <SiBuymeacoffee style={{ fontSize: "1.5em" }} />
                 {" "}{" "}

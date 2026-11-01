@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import course1 from "../../Assets/CoursesArticles/course1.png";
 import course2 from "../../Assets/CoursesArticles/course2.png";
 
@@ -34,13 +33,12 @@ const coursesData = [
 function BlogsCourses() {
   return (
     <Container fluid className="blogs-courses-section">
-      <Particle />
       {/* Courses Section */}
       <Container>
         <h1 className="project-heading">
           My <strong className="purple">Courses</strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--ink)" }}>
           Here are some of my courses available on Udemy.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

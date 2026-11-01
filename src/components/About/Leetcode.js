@@ -9,13 +9,13 @@ function LeetCodeDashboard() {
     const hardProblems = 6;
     const submissions = 115;
     const acceptanceRate = (89.15).toFixed(2);
-  
+
     const [isHovered, setIsHovered] = useState(false);
-  
+
     return (
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-          <strong style={{ color: '#fed7aa' }}>LeetCode</strong> Solved Problems 
+          <strong style={{ color: 'var(--accent)' }}>LeetCode</strong> Solved Problems
         </h1>
         <Col
           md={6}
@@ -43,13 +43,13 @@ function LeetCodeDashboard() {
             </div>
           </div>
           <div style={{ marginTop: "10px", display: "flex", justifyContent: "space-around" }}>
-            <div style={{ color: "#86efac" }}>
+            <div style={{ color: "#2e7055" }}>
               Easy <br /> {easyProblems}/{828}
             </div>
-            <div style={{ color: "orange" }}>
+            <div style={{ color: "#99601b" }}>
               Med. <br /> {mediumProblems}/{1731}
             </div>
-            <div style={{ color: "red" }}>
+            <div style={{ color: "#a34437" }}>
               Hard <br /> {hardProblems}/{749}
             </div>
           </div>
@@ -57,5 +57,5 @@ function LeetCodeDashboard() {
       </Row>
     );
   }
-  
+
   export default LeetCodeDashboard;

@@ -3,7 +3,6 @@ import { Container, Row ,Col} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import Particle from "../Particle";
 import my_cv from "../../Assets/CV.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import LeetCodeDashboard  from "../About/Leetcode";
@@ -21,7 +20,6 @@ function ResumeNew() {
   }
   return (
     <div>
-      <Particle />
       <Container fluid className="resume-section">        
         <Row style={{ justifyContent: "center" }}>
           <h1 className="project-heading">
@@ -53,7 +51,7 @@ function ResumeNew() {
             <Button
             variant="primary"
             href={my_cv}
-            target="_blank"
+            download="Soufiane_Elghazi_CV.pdf"
             style={{ maxWidth: "200px" ,width:"150px" ,height:"50px", alignContent:"center" }}
             className="download-button"
           >

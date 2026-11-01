@@ -23,28 +23,28 @@ function Home2() {
             Professional<span className="purple"> Summary </span>
             </h1>
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-                As a passionate Senior Data Engineer and Power BI Specialist, ×4 Microsoft Azure Certified, 
-                I specialize in transforming raw data into actionable insights and building scalable data solutions. 
-                With expertise in  
+                As a passionate Senior Data Engineer and Power BI Specialist, ×4 Microsoft Azure Certified,
+                I specialize in transforming raw data into actionable insights and building scalable data solutions.
+                With expertise in
                 <i>
-                    <b className="other_color"> Python</b> and <b className="other_color">SQL </b>, 
-                </i>  
+                    <b className="other_color"> Python</b> and <b className="other_color">SQL </b>,
+                </i>
                 I design and optimize robust <b className="other_color">ETL pipelines</b> and architect efficient <b className="other_color">data workflows</b> to empower businesses with data-driven decision-making.
                 <br /><br />
-                My skill set includes developing and deploying advanced 
+                My skill set includes developing and deploying advanced
                 <i>
-                    <b className="other_color"> Machine Learning </b> and <b className="other_color">AI </b> models,  
-                </i>  
-                automating data engineering tasks with 
-                <b className="other_color"> Kafka </b>, <b className="other_color">Spark</b>, and <b className="other_color"> Airflow</b>, 
-                and integrating cutting-edge  
+                    <b className="other_color"> Machine Learning </b> and <b className="other_color">AI </b> models,
+                </i>
+                automating data engineering tasks with
+                <b className="other_color"> Kafka </b>, <b className="other_color">Spark</b>, and <b className="other_color"> Airflow</b>,
+                and integrating cutting-edge
                 <b className="other_color">Large Language Models (LLMs)</b> into intelligent data solutions.
                 <br /><br />
-                Beyond data, I am proficient in modern development frameworks like  
-                <b className="other_color"> Node.js</b>,<b className="other_color"> FastApi</b> <b className="other_color"> React</b> and <b className="other_color">Flutter</b>,  
+                Beyond data, I am proficient in modern development frameworks like
+                <b className="other_color"> Node.js</b>,<b className="other_color"> FastApi</b> <b className="other_color"> React</b> and <b className="other_color">Flutter</b>,
                 allowing me to build seamless and scalable applications that bridge technology and analytics.
                 <br /><br />
-                My mission is to drive innovation through data, continuously refine my expertise, and contribute to impactful projects in  
+                My mission is to drive innovation through data, continuously refine my expertise, and contribute to impactful projects in
                 <i>
                     <b className="other_color"> Data engineering </b> and <b className="other_color">analysis</b>.
                 </i>
@@ -52,7 +52,7 @@ function Home2() {
 
           </Col>
           <Col md={4} className="myAvtar">
-          
+
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
@@ -66,10 +66,10 @@ function Home2() {
               {/* experience - 0 */}
               <div className="container-timeline left">
                 <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                     Lear Corporation • CDI • Hybrid</h5>
-                  <p style={{color:"#fca5a5"}}>Data Engineer</p>
+                  <p style={{color:"var(--wood)"}}>Data Engineer</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -78,7 +78,7 @@ function Home2() {
                     <div>
                     <FaLocationArrow className="icon" />
                     Rabat
-                    </div>                                    
+                    </div>
                   </div>
                   <p>
                   <b className="purple">Data Engineer</b><br />
@@ -99,10 +99,10 @@ function Home2() {
               {/* experience - 1 */}
               <div className="container-timeline right">
                 <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                     Accenture • CDI • Hybrid</h5>
-                  <p style={{color:"#fca5a5"}}>Data Engineer</p>
+                  <p style={{color:"var(--wood)"}}>Data Engineer</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -111,13 +111,13 @@ function Home2() {
                     <div>
                     <FaLocationArrow className="icon" />
                     Rabat
-                    </div>                                    
+                    </div>
                   </div>
                   <p>
                   <b className="purple">Data Engineer at Btechnologie Center, Exclusive Partner of Bouygues Telecom</b><br />
-                  Design and optimize ETL pipelines with Microsoft Fabric (Lakehouse, Dataflows Gen2, Pipelines). 
-                  Build Power BI reports (Direct Lake, optimized DAX). 
-                  Enhance data workflows using PySpark & SQL. 
+                  Design and optimize ETL pipelines with Microsoft Fabric (Lakehouse, Dataflows Gen2, Pipelines).
+                  Build Power BI reports (Direct Lake, optimized DAX).
+                  Enhance data workflows using PySpark & SQL.
                   Contribute to AI projects for communication failure prediction and develop Selenium automation bots.</p>
                   <div className="technologies">
                     <span className="technology-badge"><SiMicrosoftazure /></span>
@@ -132,10 +132,10 @@ function Home2() {
               {/* experience - 2 */}
               <div className="container-timeline left">
               <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                     ENOVA RT • CDI • Hybrid</h5>
-                  <p style={{color:"#fca5a5"}}>Data Engineer | Power BI Specialist</p>
+                  <p style={{color:"var(--wood)"}}>Data Engineer | Power BI Specialist</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -144,7 +144,7 @@ function Home2() {
                     <div>
                     <FaLocationArrow className="icon" />
                     Rabat
-                    </div>                                    
+                    </div>
                   </div>
                   <p>
                   <b className="purple">Dynamic Dashboard Design and Deployment</b><br />
@@ -165,10 +165,10 @@ function Home2() {
               {/* experience - 3 */}
               <div className="container-timeline right">
                 <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                     FIVERR • Freelance • Remote</h5>
-                  <p style={{color:"#fca5a5"}}>Computer Vision & AI Engineer</p>
+                  <p style={{color:"var(--wood)"}}>Computer Vision & AI Engineer</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -177,7 +177,7 @@ function Home2() {
                     <div>
                     <FaLocationArrow className="icon" />
                     Paris
-                    </div>                                    
+                    </div>
                   </div>
                   <p>
                   <b className="purple">Card Detection and Extraction</b><br />
@@ -196,10 +196,10 @@ function Home2() {
               {/* experience - 4 */}
               <div className="container-timeline left">
                 <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                      ENOVA RT • Internship • On-Site</h5>
-                  <p style={{color:"#fca5a5"}}>Data Engineering Graduation Project Intern</p>
+                  <p style={{color:"var(--wood)"}}>Data Engineering Graduation Project Intern</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -210,7 +210,7 @@ function Home2() {
                     Rabat
                     </div>
                   </div>
-              
+
                   <p>
                   <b className="purple">Predictive Modeling of Nosocomial Infections</b><br />
                    An AI approach for prevention and healthcare improvement
@@ -223,7 +223,7 @@ function Home2() {
                     <span className="technology-badge"><SiApachespark />  </span>
                     <span className="technology-badge"><SiApacheairflow />  </span>
                     <span className="technology-badge"><SiDjango />  </span>
-                    <span className="technology-badge"><SiRedis />  </span>                   
+                    <span className="technology-badge"><SiRedis />  </span>
                   </div>
                 </div>
               </div>
@@ -231,10 +231,10 @@ function Home2() {
               {/* experience - 5 */}
               <div className="container-timeline right">
                 <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                     ENOVA RT • Internship • On-Site </h5>
-                  <p style={{color:"#fca5a5"}}>Data Science Intern</p>
+                  <p style={{color:"var(--wood)"}}>Data Science Intern</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -261,10 +261,10 @@ function Home2() {
               {/* experience - 6 */}
               <div className="container-timeline left">
                 <div className="content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                   <FaSuitcase className="icon" />
                    DSIS-HCP • Internship</h5>
-                  <p style={{color:"#fca5a5"}}>Desktop Application Development Intern</p>
+                  <p style={{color:"var(--wood)"}}>Desktop Application Development Intern</p>
                   <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
                     <div>
                     <FaCalendarAlt className="icon" />
@@ -281,7 +281,7 @@ function Home2() {
                   </p>
                   <div className="technologies">
                     <span className="technology-badge"><SiCsharp />   </span>
-                    <span className="technology-badge"><SiMysql />  </span>               
+                    <span className="technology-badge"><SiMysql />  </span>
                   </div>
                 </div>
               </div>
@@ -293,14 +293,14 @@ function Home2() {
         <Row>
           <Col md={12}>
             <h1 className="purple">Education</h1>
-            <div className="education-timeline">      
-              <div className="education-container">              
-                  <div className="education-content">                 
-                    <h5 style={{color:"white"}}>                   
+            <div className="education-timeline">
+              <div className="education-container">
+                  <div className="education-content">
+                    <h5 style={{color:"var(--ink)"}}>
                       Preparatory Classes</h5>
                     <p>
                     <FaGraduationCap className="purple" />
-                    <span className="purple"> Ibn Tahir High School </span>                
+                    <span className="purple"> Ibn Tahir High School </span>
                     </p>
                     <p>
                       <FaMapMarkerAlt className="icon" />
@@ -312,9 +312,9 @@ function Home2() {
                     </p>
                   </div>
               </div>
-              <div className="education-container">              
+              <div className="education-container">
                 <div className="education-content">
-                  <h5 style={{color:"white"}}>
+                  <h5 style={{color:"var(--ink)"}}>
                     Data and Knowledge Engineering</h5>
                   <p>
                   <FaGraduationCap className="purple" />
@@ -341,7 +341,7 @@ function Home2() {
         <Testimonials/>
         <hr className="section-divider" />
         <Detaills/>
-        
+
       </Container>
     </Container>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import article0 from "../../Assets/CoursesArticles/article0.png";
 import article00 from "../../Assets/CoursesArticles/article0.png";
 import article1 from "../../Assets/CoursesArticles/article1.png";
@@ -76,13 +75,12 @@ const articlesData = [
 function Articles() {
   return (
     <Container fluid className="blogs-courses-section">
-      <Particle />
       {/* Articles Section */}
       <Container>
         <h1 className="project-heading">
           My <strong className="purple">Articles</strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--ink)" }}>
           Here are some of my articles on Medium.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
