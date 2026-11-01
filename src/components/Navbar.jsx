@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { SiBuymeacoffee,SiUdemy } from "react-icons/si";
@@ -37,12 +36,17 @@ function NavBar() {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="lg"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand as={Link} to="/" aria-label="Soufiane Elghazi home" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="Soufiane" width="80" height="40" />
+        <Navbar.Brand as={Link} to="/" aria-label="Soufiane Elghazi home"
+          className="brand-wordmark" onClick={() => updateExpanded(false)}>
+          <span className="brand-monogram" aria-hidden="true">SE<span className="brand-dot" /></span>
+          <span className="brand-name" aria-hidden="true">
+            <span className="brand-first">Soufiane</span>
+            <span className="brand-last">Elghazi</span>
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

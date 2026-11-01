@@ -44,7 +44,14 @@ body {
 .navbar-nav .nav-item a { font-weight: 500; }
 .navbar-nav .nav-item a::after { background: var(--accent); height: 2px; }
 .navbar-toggler span { background-color: var(--ink) !important; }
-.logo { object-fit: contain; filter: sepia(1) saturate(2) hue-rotate(165deg) brightness(.85); }
+/* Native wordmark: sharp at every resolution, with no logo image request. */
+.brand-wordmark { display: inline-flex; align-items: center; gap: 11px; padding: 5px 0; text-decoration: none; flex-shrink: 0; }
+.brand-monogram { position: relative; display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #42698f30; border-radius: 12px 12px 12px 3px; background: linear-gradient(145deg, #e7eef2, #dce7eb); color: var(--accent); font: 500 21px/1 Georgia, 'Times New Roman', serif; letter-spacing: -.09em; padding-right: 2px; transition: border-color .2s ease, background .2s ease; }
+.brand-dot { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); right: 7px; bottom: 7px; }
+.brand-name { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; }
+.brand-first { color: var(--ink); font: 500 21px/.95 Georgia, 'Times New Roman', serif; letter-spacing: -.045em; }
+.brand-last { color: var(--accent); font-size: 8px; font-weight: 650; line-height: 1; letter-spacing: .3em; text-transform: uppercase; }
+.brand-wordmark:hover .brand-monogram { border-color: #42698f70; background: #dce7eb; }
 .fork-btn { padding-top: 7px !important; }
 .navbar .fork-btn-inner {
   color: var(--accent) !important; background: var(--sky) !important;
@@ -139,6 +146,9 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   .navbar-nav .nav-link { padding-left: .5rem !important; padding-right: .5rem !important; }
   .navbar-nav .nav-item { margin-left: 0; }
   .book-copy { padding: 32px; }
+  .navbar-collapse { max-height: calc(100dvh - 90px); overflow-y: auto; }
+  .navbar-nav .nav-link { padding: .7rem !important; }
+  .navbar .fork-btn { display: inline-block; margin: 0 8px 8px; }
 }
 @media (max-width: 767px) {
   .navbar, .navbar.sticky { background: var(--linen) !important; }
