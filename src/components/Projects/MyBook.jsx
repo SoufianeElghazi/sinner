@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
+import BookAnalysis from "./BookAnalysis";
+import "./endeavors.css";
 import cover from "../../Assets/optimized/The_Seeker.webp";
 
 export default function MyBook() {
@@ -40,6 +42,7 @@ export default function MyBook() {
           <span className="book-format">PDF format · Free download</span>
         </div>
       </div>
+      <BookAnalysis />
     </Container>
   );
 }

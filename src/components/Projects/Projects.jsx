@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import BlogsCourses from "./BlogsCourses";
 import MyBook from "./MyBook";
+import MobileApps from "./MobileApps";
 import Articles from "./Articles.jsx";
 import CertificationCard from "./CertificationCard.jsx";
 import virtualization_denodo from "../../Assets/optimized/Projects/7.webp";
@@ -89,7 +90,9 @@ function Projects() {
     <Container fluid className="project-section">
       <MyBook />
       <hr className="section-divider" />
-      <BlogsCourses/>
+      <BlogsCourses />
+      <hr className="section-divider" />
+      <MobileApps />
       <hr className="section-divider" />
       {/* Certifications Section */}
       <Container>

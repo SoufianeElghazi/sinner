@@ -32,7 +32,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://cdn.jsdelivr.net https://*.google-analytics.com; font-src 'self' data:; connect-src 'self' https://github-contributions-api.jogruber.de https://*.google-analytics.com https://www.googletagmanager.com; media-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://img.shields.io https://cdn.jsdelivr.net https://*.google-analytics.com; font-src 'self' data:; connect-src 'self' https://github-contributions-api.jogruber.de https://*.google-analytics.com https://www.googletagmanager.com; media-src 'self'; frame-src https://www.youtube-nocookie.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
         }
       ]
     },
