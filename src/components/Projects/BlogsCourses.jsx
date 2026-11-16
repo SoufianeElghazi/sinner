@@ -1,4 +1,5 @@
 import React from "react";
+import EndeavorsHeading from "./EndeavorsHeading";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -32,40 +33,34 @@ const coursesData = [
 
 function BlogsCourses() {
   return (
-    <Container fluid className="blogs-courses-section">
-      {/* Courses Section */}
-      <Container>
-        <h1 className="project-heading">
-          My <strong className="purple">Courses</strong>
-        </h1>
-        <p style={{ color: "var(--ink)" }}>
-          Here are some of my courses available on Udemy.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {coursesData.map((course) => (
-            <Col md={4} className="course-card" key={course.id}>
-              <Card className="course-card-view">
-                <Card.Img loading="lazy" decoding="async" variant="top" src={course.image} alt={course.title} />
-                <Card.Body>
-                  <Card.Title>{course.title}</Card.Title>
-                  <Card.Text>{course.description}</Card.Text>
-                  <p className="course-price">
-                    <strong>Price:</strong> {course.price}
-                  </p>
-                  <p className="course-promo">
-                    <strong>Coupon:</strong> {course.promoCode}
-                  </p>
-                  <Button variant="primary" href={course.link} target="_blank" rel="noopener noreferrer">
-                    <SiUdemy /> &nbsp;
-                    {"Purchase Now"}
-                    
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container> 
+    <Container as="section" className="blogs-courses-section">
+      <EndeavorsHeading lead="My" accent="Courses">
+        Courses available on Udemy.
+      </EndeavorsHeading>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        {coursesData.map((course) => (
+          <Col md={4} className="course-card" key={course.id}>
+            <Card className="course-card-view">
+              <Card.Img loading="lazy" decoding="async" variant="top" src={course.image} alt={course.title} />
+              <Card.Body>
+                <Card.Title>{course.title}</Card.Title>
+                <Card.Text>{course.description}</Card.Text>
+                <p className="course-price">
+                  <strong>Price:</strong> {course.price}
+                </p>
+                <p className="course-promo">
+                  <strong>Coupon:</strong> {course.promoCode}
+                </p>
+                <Button variant="primary" href={course.link} target="_blank" rel="noopener noreferrer">
+                  <SiUdemy /> &nbsp;
+                  {"Purchase Now"}
+
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
     </Container>
   );
 }

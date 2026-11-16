@@ -1,4 +1,5 @@
 import React from "react";
+import EndeavorsHeading from "./EndeavorsHeading";
 import { Container } from "react-bootstrap";
 import { AiOutlineArrowUp, AiOutlineGlobal } from "react-icons/ai";
 import { SiAndroid } from "react-icons/si";
@@ -37,11 +38,9 @@ const apps = [
 export default function MobileApps() {
   return (
     <Container as="section" id="mobile-apps" className="mobile-apps" aria-labelledby="mobile-apps-heading">
-      <div className="mobile-apps-intro">
-        <span className="eyebrow">Built for everyday life</span>
-        <h2 id="mobile-apps-heading">My <span>Mobile Apps</span></h2>
-        <p>Scan a QR code with your phone or tap a link to open the app.</p>
-      </div>
+      <EndeavorsHeading id="mobile-apps-heading" lead="My" accent="Mobile Apps" eyebrow="Built for everyday life">
+        Scan a QR code with your phone or tap a link to open the app.
+      </EndeavorsHeading>
       <div className="mobile-apps-grid">
         {apps.map(({ name, category, theme, icon, description, note, links }) => (
           <article className={`mobile-app mobile-app--${theme}`} key={name}>

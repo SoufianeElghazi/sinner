@@ -1,4 +1,5 @@
 import React from "react";
+import EndeavorsHeading from "./EndeavorsHeading";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -74,34 +75,28 @@ const articlesData = [
 
 function Articles() {
   return (
-    <Container fluid className="blogs-courses-section">
-      {/* Articles Section */}
-      <Container>
-        <h1 className="project-heading">
-          My <strong className="purple">Articles</strong>
-        </h1>
-        <p style={{ color: "var(--ink)" }}>
-          Here are some of my articles on Medium.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {articlesData.map((article) => (
-            <Col md={6} className="article-card" key={article.id}>
-              <Card className="article-card-view">
-              <Card.Img loading="lazy" decoding="async" variant="top" src={article.image} alt={article.title} />
-                <Card.Body>
-                  <Card.Title>{article.title}</Card.Title>
-                  <Card.Text>{article.description}</Card.Text>
-                  <Button variant="primary" href={article.link} target="_blank" rel="noopener noreferrer">
-                    <SiMedium /> &nbsp;
-                    {"Read Article"}
-                    
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>     
+    <Container as="section" className="blogs-courses-section">
+      <EndeavorsHeading lead="My" accent="Articles">
+        Selected articles on Medium.
+      </EndeavorsHeading>
+      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        {articlesData.map((article) => (
+          <Col md={6} className="article-card" key={article.id}>
+            <Card className="article-card-view">
+            <Card.Img loading="lazy" decoding="async" variant="top" src={article.image} alt={article.title} />
+              <Card.Body>
+                <Card.Title>{article.title}</Card.Title>
+                <Card.Text>{article.description}</Card.Text>
+                <Button variant="primary" href={article.link} target="_blank" rel="noopener noreferrer">
+                  <SiMedium /> &nbsp;
+                  {"Read Article"}
+
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
     </Container>
   );
 }

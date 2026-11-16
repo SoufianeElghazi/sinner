@@ -1,4 +1,5 @@
 import React from "react";
+import EndeavorsHeading from "./EndeavorsHeading";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import BlogsCourses from "./BlogsCourses";
@@ -96,12 +97,7 @@ function Projects() {
       <hr className="section-divider" />
       {/* Certifications Section */}
       <Container>
-        <h1 className="project-heading">
-          My <strong className="purple">Certifications </strong>
-        </h1>
-        <p style={{ color: "var(--ink)" }}>
-          Here are a few Certificates I've got.
-        </p>
+        <EndeavorsHeading lead="My" accent="Certifications" />
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="certification-card">
             <CertificationCard
@@ -304,12 +300,7 @@ function Projects() {
       <hr className="section-divider" />
       {/* Projects Section */}
       <Container>        
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Projects </strong>
-        </h1>
-        <p style={{ color: "var(--ink)" }}>
-          Here are a few projects I've worked on.
-        </p>
+        <EndeavorsHeading lead="My Recent" accent="Projects" />
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -514,11 +505,16 @@ function Projects() {
           </Col>         
         </Row>
       </Container>
-      <Articles/>
-      <LeetCodeDashboard/>
       <hr className="section-divider" />
-      <Testimonials/>
-      <Detaills/>
+      <Articles />
+      <hr className="section-divider" />
+      <Container className="endeavors-support">
+        <LeetCodeDashboard />
+        <hr className="section-divider" />
+        <Testimonials />
+        <hr className="section-divider" />
+        <Detaills />
+      </Container>
       
     </Container>
   );

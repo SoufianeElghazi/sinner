@@ -1,4 +1,5 @@
 import React from "react";
+import EndeavorsHeading from "./EndeavorsHeading";
 import { Container } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
 import BookAnalysis from "./BookAnalysis";
@@ -10,10 +11,7 @@ export default function MyBook() {
 
   return (
     <Container as="section" className="book-section" aria-labelledby="book-heading">
-      <div className="book-intro">
-        <span className="eyebrow">Beyond the technical</span>
-        <h1 id="book-heading">My <span>Book</span></h1>
-      </div>
+      <EndeavorsHeading as="h1" id="book-heading" lead="My" accent="Book" eyebrow="Beyond the technical" />
       <div className="book-feature">
         <div className="book-artwork">
           <span className="book-orbit" aria-hidden="true" />
