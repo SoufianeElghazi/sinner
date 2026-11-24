@@ -41,6 +41,7 @@ const coursesData = [
     title: "SQL Joins Explained: Solve Real Business Data Problems",
     description: "Learn SQL joins by solving real business data problems.",
     image: course4,
+    promoCode: "7B633A54B4523BF1A8B5",
     link: "https://www.udemy.com/course/draft/7454331/?referralCode=7B633A54B4523BF1A8B5",
   },
 ];
@@ -56,9 +57,9 @@ function BlogsCourses() {
           <Col md={4} className="course-card" id={`course-${course.id}`} key={course.id} style={{ scrollMarginTop: "100px" }}>
             <Card className="course-card-view">
               <Card.Img loading="lazy" decoding="async" variant="top" src={course.image} alt={course.title} />
-              <Card.Body>
+              <Card.Body className="d-flex flex-column align-items-center">
                 <Card.Title>{course.title}</Card.Title>
-                <Card.Text>{course.description}</Card.Text>
+                <Card.Text className="flex-grow-1">{course.description}</Card.Text>
                 {course.promoCode && (
                   <p className="course-promo">
                     <strong>Coupon:</strong> {course.promoCode}
