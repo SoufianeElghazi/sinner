@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import course1 from "../../Assets/optimized/CoursesArticles/course1.webp";
 import course2 from "../../Assets/optimized/CoursesArticles/course2.webp";
 import course3 from "../../Assets/optimized/CoursesArticles/course3.webp";
+import course4 from "../../Assets/optimized/CoursesArticles/course4.webp";
 
 import { SiUdemy } from "react-icons/si";
 
@@ -35,6 +36,13 @@ const coursesData = [
     promoCode: "94FC774530D9091EAF57",
     link: "https://www.udemy.com/course/sql-window-functions-through-business-problems/?referralCode=94FC774530D9091EAF57",
   },
+  {
+    id: 4,
+    title: "SQL Joins Explained: Solve Real Business Data Problems",
+    description: "Learn SQL joins by solving real business data problems.",
+    image: course4,
+    link: "https://www.udemy.com/course/draft/7454331/?referralCode=7B633A54B4523BF1A8B5",
+  },
 ];
 
 function BlogsCourses() {
@@ -45,7 +53,7 @@ function BlogsCourses() {
       </EndeavorsHeading>
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         {coursesData.map((course) => (
-          <Col md={4} className="course-card" key={course.id}>
+          <Col md={4} className="course-card" id={`course-${course.id}`} key={course.id} style={{ scrollMarginTop: "100px" }}>
             <Card className="course-card-view">
               <Card.Img loading="lazy" decoding="async" variant="top" src={course.image} alt={course.title} />
               <Card.Body>
