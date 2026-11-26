@@ -7,6 +7,7 @@ import course1 from "../../Assets/optimized/CoursesArticles/course1.webp";
 import course2 from "../../Assets/optimized/CoursesArticles/course2.webp";
 import course3 from "../../Assets/optimized/CoursesArticles/course3.webp";
 import course4 from "../../Assets/optimized/CoursesArticles/course4.webp";
+import course5 from "../../Assets/optimized/CoursesArticles/course5.webp";
 
 import { SiUdemy } from "react-icons/si";
 
@@ -43,6 +44,14 @@ const coursesData = [
     image: course4,
     promoCode: "7B633A54B4523BF1A8B5",
     link: "https://www.udemy.com/course/draft/7454331/?referralCode=7B633A54B4523BF1A8B5",
+  },
+  {
+    id: 5,
+    title: "SQL CTEs & Subqueries: Write Clear, Maintainable Queries",
+    description: "Break complex SQL queries into steps using common table expressions and subqueries.",
+    image: course5,
+    promoCode: "56E89B2651E6B972A791",
+    link: "https://www.udemy.com/course/draft/7458045/?referralCode=56E89B2651E6B972A791",
   },
 ];
 
