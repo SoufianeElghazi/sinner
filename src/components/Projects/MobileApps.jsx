@@ -24,7 +24,7 @@ const apps = [
     note: "Open the web app on iPhone",
     links: [
       { label: "Android beta", detail: "Google Play testing", href: "https://play.google.com/apps/testing/com.hsebli.app", qr: hsebliAndroidQr },
-      { label: "Web app", detail: "Works in Safari", href: "https://hsebli-app.pages.dev/", qr: hsebliWebQr, web: true },
+      { label: "Web app", detail: "Works in Safari", href: "https://hsebli.com/", qr: hsebliWebQr, web: true },
     ],
   },
   {
